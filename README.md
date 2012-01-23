@@ -9,6 +9,12 @@ The library includes:
 * Methods to handle the exchange of OAuth of credentials ([more information](http://www.23developer.com/api/oauth)).
 * A handy command-line interface to the 23 Video API.
 
+The library and it dependencies is easily installed throuh `git`:
+
+    git clone git@github.com:23/node-23video.git
+    cd node-23video
+    git submodule init
+
 
 ### Use the 23 Video API in Node.js
 
