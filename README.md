@@ -1,8 +1,8 @@
 ### 23 Video API for Node.js
 
-The `node-23video` project is a full implementation of [The 23 Video API](http://www.23developer.com/api) (or more correctly, The Visualplatform API) for [Node.js](http://www.nodejs.org). 
+`node-23video` is a full implementation of [The 23 Video API](http://www.23developer.com/api) (or more correctly, The Visualplatform API) for [Node.js](http://www.nodejs.org). 
 
-`node-23video` includes:
+The library includes:
 
 * Implementations of all the methods in the API.
 * OAuth signatures through (23's fork of `restler`)[http://github.com/23/restler].
@@ -10,7 +10,7 @@ The `node-23video` project is a full implementation of [The 23 Video API](http:/
 * A handy command-line interface to the 23 Video API.
 
 
-### Using the 23 Video API in Node.js
+### Use the 23 Video API in Node.js
 
 Making simple request to the open API:
 
@@ -43,7 +43,7 @@ All methods requiring authentication takes `access_token` and `access_token_secr
 The library using [@kriszyp](https://twitter.com/kriszyp)'s [`node-promise`](https://github.com/kriszyp/node-promise) complete implementation of JavaScript promises.
 
 
-### Exchanging token (or: Having user grant access to the API)
+### Exchanging tokens (or: Having user grant access to the API)
 
 The library includes two methods wrapping the OAuth token flow, `.beginAuthentication()` and `.endAuthentication()`.
 
@@ -83,11 +83,6 @@ A more likely example handles login through 23 Video. In the [Express applicatio
     var express = require('express');
     var app = express.createServer();
 
-    // Set up session support
-    app.use(express.cookieParser());
-    app.use(express.session({secret:config.express.sessionSecret}));
-
-
     // Create a URL at http://examples.com/oauth/23video/redirect which initiates the flow
     app.get('/oauth/23video/redirect', function(req, res){
         visualplatform.beginAuthentication()
@@ -110,3 +105,42 @@ A more likely example handles login through 23 Video. In the [Express applicatio
 
 
 ### Using the command-line interface for Node.js
+
+The library comes with `./23video` a command-line interface (CLI) for The 23 Video API. Like the library itself, the CLI does open API requests, signed request and can handle token exchange or login.
+
+
+Open requests without signatures
+
+    ./23video -m photo.list search test limit 30
+
+Signed requests to the API
+
+    ./23video -k <consumer_key> -s <consumer_secret> -at <access_token> -as <access_secret> -m photo.list search test limit 30
+
+Get access credentials from consumer keys
+
+    ./23video --auth -k <consumer_key> -s <consumer_secret>
+
+Full documentation is available with `./23video --help`:
+
+  Usage: 23video [options]
+
+  Options:
+
+    -h, --help                            output usage information
+    -V, --version                         output the version number
+    -m, --method <method>                 Method to call in the 23 Video API
+    -d, --domain [domain]                 Domain for the 23 Video site
+    -a, --auth                            Authenticate against the 23 Video API
+    -k, --key [key]                       OAuth consumer key
+    -s, --secret [secret]                 OAuth consumer secret
+    -at, --access_token [access_token]    OAuth access token
+    -as, --access_secret [access_secret]  OAuth access token secret
+
+
+### To-do
+
+* Handle file uploads in the library
+* Handle file uploads through CLI
+* Store credentials on disk for easy access on the CLI
+* Prompt for domain, method, key/secret in CLI when required
