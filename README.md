@@ -1,4 +1,4 @@
-### 23 Video API for Node.js
+## 23 Video API for Node.js
 
 `node-23video` is a full implementation of [The 23 Video API](http://www.23developer.com/api) (or more correctly, The Visualplatform API) for [Node.js](http://www.nodejs.org). 
 
@@ -16,7 +16,7 @@ The library and it dependencies is easily installed throuh `git`:
     git submodule init
 
 
-### Use the 23 Video API in Node.js
+## Use the 23 Video API in Node.js
 
 Making simple request to the open API:
 
@@ -49,7 +49,7 @@ All methods requiring authentication takes `access_token` and `access_token_secr
 The library using [@kriszyp](https://twitter.com/kriszyp)'s [`node-promise`](https://github.com/kriszyp/node-promise) complete implementation of JavaScript promises.
 
 
-### Exchanging tokens (or: Having user grant access to the API)
+## Exchanging tokens (or: Having user grant access to the API)
 
 The library includes two methods wrapping the OAuth token flow, `.beginAuthentication()` and `.endAuthentication()`.
 
@@ -110,7 +110,7 @@ A more likely example handles login through 23 Video. In the [Express applicatio
     });
 
 
-### Using the command-line interface for Node.js
+## Using the command-line interface for Node.js
 
 The library comes with `./23video` a command-line interface (CLI) for The 23 Video API. Like the library itself, the CLI does open API requests, signed request and can handle token exchange or login.
 
