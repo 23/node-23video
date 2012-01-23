@@ -5,7 +5,7 @@
 The library includes:
 
 * Implementations of all the methods in the API.
-* OAuth signatures through (23's fork of `restler`)[http://github.com/23/restler].
+* OAuth signatures through [23's fork of `restler`](http://github.com/23/restler).
 * Methods to handle the exchange of OAuth of credentials ([more information](http://www.23developer.com/api/oauth)).
 * A handy command-line interface to the 23 Video API.
 
