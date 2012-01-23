@@ -1,3 +1,9 @@
 [submodule "restler"]
 	path = restler
 	url = git://github.com/23/restler.git
+[submodule "node-promise"]
+	path = node-promise
+	url = https://github.com/kriszyp/node-promise
+[submodule "commander.js"]
+	path = commander.js
+	url = git://github.com/visionmedia/commander.js.git
