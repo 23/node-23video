@@ -14,6 +14,7 @@ The library and it dependencies is easily installed throuh `git`:
     git clone git@github.com:23/node-23video.git
     cd node-23video
     git submodule init
+    git submodule update
 
 
 ## Use the 23 Video API in Node.js
