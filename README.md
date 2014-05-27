@@ -17,7 +17,7 @@ The library and it dependencies is easily installed throuh `git`:
     git submodule init
     git submodule update
 
-Following packages must be installed (either with 'npm install' or manually) for this to work:
+Following packages must be installed (either with `npm install` or manually) for this to work:
  - promise (https://github.com/ForbesLindesay/promisejs.org)
 
 NPM package might come sooner or later.
