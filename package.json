@@ -1,0 +1,24 @@
+{
+  "name": "node-23video",
+  "version": "1.0.0",
+  "description": "node-23video is a full implementation of The 23 Video API (or more correctly, The Visualplatform API) for Node.js.",
+  "main": "visualplatform.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterdremstrup/node-23video.git"
+  },
+  "keywords": [
+    "23video",
+    "23",
+    "visualplatform"
+  ],
+  "author": "Steffen T. Christensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterdremstrup/node-23video/issues"
+  },
+  "homepage": "https://github.com/peterdremstrup/node-23video"
+}
