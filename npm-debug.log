@@ -1,17 +1,21 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'edit', 'node-23video' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
 2 info using npm@1.4.20
 3 info using node@v0.10.16
-4 error Error: ENOENT, lstat '/Domain/PeopleGroup.Internal/Users/pdre/Git/node-23video/node_modules/node-23video'
-5 error If you need help, you may report this *entire* log,
-5 error including the npm and node versions, at:
-5 error     <http://github.com/npm/npm/issues>
-6 error System Darwin 13.3.0
-7 error command "node" "/usr/local/bin/npm" "edit" "node-23video"
-8 error cwd /Domain/PeopleGroup.Internal/Users/pdre/Git/node-23video
-9 error node -v v0.10.16
-10 error npm -v 1.4.20
-11 error path /Domain/PeopleGroup.Internal/Users/pdre/Git/node-23video/node_modules/node-23video
-12 error code ENOENT
-13 error errno 34
-14 verbose exit [ 34, true ]
+4 verbose publish [ '.' ]
+5 error Failed to parse json
+5 error Unexpected string
+6 error File: /Domain/PeopleGroup.Internal/Users/pdre/Git/node-23video/package.json
+7 error Failed to parse package.json data.
+7 error package.json must be actual JSON, not just JavaScript.
+7 error
+7 error This is not a bug in npm.
+7 error Tell the package author to fix their package.json file. JSON.parse
+8 error System Darwin 13.3.0
+9 error command "node" "/usr/local/bin/npm" "publish"
+10 error cwd /Domain/PeopleGroup.Internal/Users/pdre/Git/node-23video
+11 error node -v v0.10.16
+12 error npm -v 1.4.20
+13 error file /Domain/PeopleGroup.Internal/Users/pdre/Git/node-23video/package.json
+14 error code EJSONPARSE
+15 verbose exit [ 1, true ]
