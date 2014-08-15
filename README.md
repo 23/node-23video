@@ -11,11 +11,16 @@ The library includes:
 
 The library and it dependencies is easily installed throuh `git`:
 
-    git clone git@github.com:23/node-23video.git
+    cd node_modules/
+    git clone https://github.com/peterdremstrup/node-23video.git
     cd node-23video
     git submodule init
     git submodule update
 
+Following packages must be installed (either with `npm install` or manually) for this to work:
+ - promise (https://github.com/ForbesLindesay/promisejs.org)
+
+NPM package might come sooner or later.
 
 ## Use the 23 Video API in Node.js
 
