@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "promise": "~5.0.0",
-    "restler": "~3.2.2"
+    "restler": "~3.2.2",
+    "commander": "~2.3.0"
   },
   "repository": {
     "type": "git",
