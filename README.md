@@ -9,20 +9,16 @@ The library includes:
 * Methods to handle the exchange of OAuth of credentials ([more information](http://www.23developer.com/api/oauth)).
 * A handy command-line interface to the 23 Video API.
 
-The library and it dependencies is easily installed throuh `git`:
-
-    git clone git@github.com:23/node-23video.git
-    cd node-23video
-    git submodule init
-    git submodule update
+The library and it dependencies is easily installed with `npm install node-23video`:
 
 
 ## Use the 23 Video API in Node.js
 
 Making simple request to the open API:
 
-    var visualplatform = Visualplatform(domain);
-    visualplatform.album.list({search:'test'})
+    var Visualplatform = require('node-23video')
+    var vp = Visualplatform(domain);
+    vp.album.list({search:'test'})
       .then(
         function(data){...},
         function(errorMessage){...}
@@ -30,8 +26,9 @@ Making simple request to the open API:
 
 Making OAuth signed requests to the API:
 
-    var visualplatform = Visualplatform(domain, key, secret);
-    visualplatform.album.create({title:'New album'}, access_token. access_token_secret)
+    var Visualplatform = require('node-23video')
+    var vp = Visualplatform(domain, key, secret);
+    vp.album.create({title:'New album'}, access_token. access_token_secret)
       .then(
         function(data){...},
         function(errorMessage){...}
@@ -39,9 +36,9 @@ Making OAuth signed requests to the API:
 
 Methods can be called as:
 
-    visualplatform.photo.updateUploadToken(...)
-    visualplatform['photo.updateUploadToken'](...)
-    visualplatform['/api/photo/update-upload-token'](...)
+    vp.photo.updateUploadToken(...)
+    vp['photo.updateUploadToken'](...)
+    vp['/api/photo/update-upload-token'](...)
 
 The first parameter is always a JS object with the filter data described in [the API documentation](http://www.23developer.com/api/#methods).
 
