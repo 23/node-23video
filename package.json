@@ -1,6 +1,6 @@
 {
   "name": "node-23video",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "node-23video is a full implementation of The 23 Video API (or more correctly, The Visualplatform API) for Node.js.",
   "main": "lib/visualplatform.js",
   "scripts": {
