@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "promise": "~5.0.0",
-    "restler": "git://github.com/23/restler.git#master",
+    "restler": "git://github.com/peterdremstrup/restler.git#master",
     "commander": "~2.3.0"
   },
   "repository": {
