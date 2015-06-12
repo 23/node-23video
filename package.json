@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "promise": "~5.0.0",
-    "restler": "git://github.com/danwrong/restler.git",
+    "restler": "git+https://github.com/danwrong/restler.git",
     "commander": "~2.3.0"
   },
   "repository": {
