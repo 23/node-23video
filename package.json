@@ -1,6 +1,6 @@
 {
   "name": "node-23video",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "node-23video is a full implementation of The 23 Video API (or more correctly, The Visualplatform API) for Node.js.",
   "main": "lib/visualplatform.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "promise": "~5.0.0",
-    "restler": "git://github.com/peterdremstrup/restler.git#master",
+    "restler": "~3.1.0",
     "commander": "~2.3.0"
   },
   "repository": {
