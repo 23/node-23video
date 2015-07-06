@@ -134,7 +134,7 @@ Full documentation is available with `./23video --help`:
     -h, --help                            output usage information
     -V, --version                         output the version number
     -m, --method <method>                 Method to call in the 23 Video API
-    -d, --domain [domain]                 Domain for the 23 Video site
+    -h, --hostname [hostname]             Domain for the 23 Video site
     -a, --auth                            Authenticate against the 23 Video API
     -k, --key [key]                       OAuth consumer key
     -s, --secret [secret]                 OAuth consumer secret
