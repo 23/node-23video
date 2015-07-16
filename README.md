@@ -5,7 +5,6 @@
 The library includes:
 
 * Implementations of all the methods in the API.
-* OAuth signatures through [23's fork of `restler`](http://github.com/23/restler).
 * Methods to handle the exchange of OAuth of credentials ([more information](http://www.23developer.com/api/oauth)).
 * A handy command-line interface to the 23 Video API.
 
@@ -134,7 +133,7 @@ Full documentation is available with `./23video --help`:
     -h, --help                            output usage information
     -V, --version                         output the version number
     -m, --method <method>                 Method to call in the 23 Video API
-    -d, --domain [domain]                 Domain for the 23 Video site
+    -h, --hostname [hostname]             Domain for the 23 Video site
     -a, --auth                            Authenticate against the 23 Video API
     -k, --key [key]                       OAuth consumer key
     -s, --secret [secret]                 OAuth consumer secret
