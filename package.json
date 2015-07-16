@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/peterdremstrup/node-23video.git"
+    "url": "https://github.com/23/node-23video.git"
   },
   "keywords": [
     "23video",
@@ -22,7 +22,7 @@
   ],
   "author": "Steffen T. Christensen",
   "bugs": {
-    "url": "https://github.com/peterdremstrup/node-23video/issues"
+    "url": "https://github.com/23/node-23video/issues"
   },
-  "homepage": "https://github.com/peterdremstrup/node-23video"
+  "homepage": "https://github.com/23/node-23video"
 }
