@@ -1,6 +1,6 @@
 ## 23 Video API for Node.js
 
-`node-23video` is a full implementation of [The 23 Video API](http://www.23developer.com/api) (or more correctly, The Visualplatform API) for [Node.js](http://www.nodejs.org). 
+`node-23video` is a full implementation of [The 23 Video API](http://www.23developer.com/api) (or more correctly, The Visualplatform API) for [Node.js](http://www.nodejs.org).
 
 The library includes:
 
@@ -45,6 +45,10 @@ All methods requiring authentication takes `access_token` and `access_token_secr
 
 The library using [@kriszyp](https://twitter.com/kriszyp)'s [`node-promise`](https://github.com/kriszyp/node-promise) complete implementation of JavaScript promises.
 
+## Making use of cached responses
+
+If you add a `requestMethod` with value `GET'` to the request arguments, the module will use an anonymous `GET` request, to make use of caching and save resources on the api.
+Will be overruled if `include_unpublished_p` is true, since administritive permissions are necessary and can't be made with a `GET`-request.
 
 ## Exchanging tokens (or: Having user grant access to the API)
 
@@ -56,7 +60,7 @@ A few examples can illustrate how the methods are used. First, [the command-line
     visualplatform.beginAuthentication()
       .then(function(url){
             console.log('To verify access, open the following URL in your browser and follow the instructions.\n  '+url+'\n');
-            program.prompt('To complete the authorization, paste the string from the browser here: ', function(verifier){        
+            program.prompt('To complete the authorization, paste the string from the browser here: ', function(verifier){
                              process.stdin.destroy();
                              visualplatform.completeAuthentication(null, verifier)
                                .then(
