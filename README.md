@@ -1,17 +1,17 @@
 ## 23 Video API for Node.js
 
-`node-23video` is a full implementation of [The 23 Video API](http://www.twentythree.net/api) (or more correctly, The Visualplatform API) for [Node.js](http://www.nodejs.org).
+`node-23video` is a full implementation of [The TwentyThree API](http://www.twentythree.net/api) for [Node.js](http://www.nodejs.org).
 
 The library includes:
 
-* Implementations of all the methods in the API.
+* Implementations of sample methods in the API.
 * Methods to handle the exchange of OAuth of credentials ([more information](http://www.twentythree.net/api/oauth)).
-* A handy command-line interface to the 23 Video API.
+* A handy command-line interface to the TwentyThree API.
 
 The library and it dependencies is easily installed with `npm install node-23video`:
 
 
-## Use the 23 Video API in Node.js
+## Use the TwentyThree API in Node.js
 
 Making simple request to the open API:
 
@@ -39,7 +39,7 @@ Methods can be called as:
     vp['photo.updateUploadToken'](...)
     vp['/api/photo/update-upload-token'](...)
 
-The first parameter is always a JS object with the filter data described in [the API documentation](http://www.23developer.com/api/#methods).
+The first parameter is always a JS object with the filter data described in [the API documentation](http://www.twebntythree.nbet/api/#methods).
 
 All methods requiring authentication takes `access_token` and `access_token_secret` as their second and third parameters.
 
@@ -65,7 +65,7 @@ A few examples can illustrate how the methods are used. First, [the command-line
                              visualplatform.completeAuthentication(null, verifier)
                                .then(
                                  function(credentials){
-                                       console.log('\nCREDENTIALS FOR 23 VIDEO:');
+                                       console.log('\nCREDENTIALS FOR TWENTYTHREE:');
                                        console.log('Domain:\t\t\t', credentials.domain);
                                        console.log('Consumer key:\t\t', program.key);
                                        console.log('Consumer secret:\t', program.secret);
@@ -81,7 +81,7 @@ A few examples can illustrate how the methods are used. First, [the command-line
             console.log('Error while beginning authentication:', message);
           });
 
-A more likely example handles login through 23 Video. In the [Express application framework](http://expressjs.com/), this might be achieved like this:
+A more likely example handles login through TwentyThree. In the [Express application framework](http://expressjs.com/), this might be achieved like this:
 
     // Instance of the library
     var visualplatform = require('./visualplatform')(null, program.key, program.secret, 'http://examples.com/oauth/23video');
@@ -113,7 +113,7 @@ A more likely example handles login through 23 Video. In the [Express applicatio
 
 ## Using the command-line interface for Node.js
 
-The library comes with `./23video` a command-line interface (CLI) for The 23 Video API. Like the library itself, the CLI does open API requests, signed request and can handle token exchange or login.
+The library comes with `./23video` a command-line interface (CLI) for The TwentyThree API. Like the library itself, the CLI does open API requests, signed request and can handle token exchange or login.
 
 
 Open requests without signatures
