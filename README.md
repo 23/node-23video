@@ -1,11 +1,11 @@
 ## 23 Video API for Node.js
 
-`node-23video` is a full implementation of [The 23 Video API](http://www.23developer.com/api) (or more correctly, The Visualplatform API) for [Node.js](http://www.nodejs.org).
+`node-23video` is a full implementation of [The 23 Video API](http://www.twentythree.net/api) (or more correctly, The Visualplatform API) for [Node.js](http://www.nodejs.org).
 
 The library includes:
 
 * Implementations of all the methods in the API.
-* Methods to handle the exchange of OAuth of credentials ([more information](http://www.23developer.com/api/oauth)).
+* Methods to handle the exchange of OAuth of credentials ([more information](http://www.twentythree.net/api/oauth)).
 * A handy command-line interface to the 23 Video API.
 
 The library and it dependencies is easily installed with `npm install node-23video`:
@@ -143,11 +143,3 @@ Full documentation is available with `./23video --help`:
     -s, --secret [secret]                 OAuth consumer secret
     -at, --access_token [access_token]    OAuth access token
     -as, --access_secret [access_secret]  OAuth access token secret
-
-
-### To-do
-
-* Handle file uploads in the library
-* Handle file uploads through CLI
-* Store credentials on disk for easy access on the CLI
-* Prompt for domain, method, key/secret in CLI when required
